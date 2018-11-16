@@ -1,4 +1,4 @@
-package com.qiaohx.common.date;
+package com.qiaohx.utils.date;
 
 public enum DateFormatRules {
     /**

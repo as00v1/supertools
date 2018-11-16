@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>utils-8080</module>
         <module>encrypt-8081</module>
+        <module>utils</module>
     </modules>
 
     <parent>

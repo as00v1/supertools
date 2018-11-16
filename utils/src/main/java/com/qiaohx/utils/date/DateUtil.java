@@ -1,4 +1,4 @@
-package com.qiaohx.common.date;
+package com.qiaohx.utils.date;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

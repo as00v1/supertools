@@ -1,7 +1,7 @@
 package com.qiaohx.encrypt.controller;
 
-import com.qiaohx.common.date.DateFormatRules;
-import com.qiaohx.common.date.DateUtil;
+import com.qiaohx.utils.date.DateFormatRules;
+import com.qiaohx.utils.date.DateUtil;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
