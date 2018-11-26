@@ -1,27 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 server:
   port: 8081
-spring:
-  datasource:
-    name: dev
-    url: jdbc:mysql://118.24.212.141:3306/test?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
-    username: test
-    password: QHX&jy666
-    # 使用druid数据源
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    filters: stat
-    maxActive: 20
-    initialSize: 1
-    maxWait: 60000
-    minIdle: 1
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: select 'x'
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    maxOpenPreparedStatements: 20
+  servlet:
+    context-path: /api/encrypt
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.qiaohx.encrypt.model
@@ -30,3 +16,4 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
+
