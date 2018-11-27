@@ -6,7 +6,8 @@
     <!-- 变量 -->
     <property name="logback.logdir" value="/data/logs"/>
     <property name="logback.appname" value="encrypt"/>
-    
+    <springProperty scope="context" name="log_name" source="spring.application.name" />
+    <springProperty scope="context" name="log_path" source="logging.path" />
     <!-- 控制台打印日志的相关配置 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- 日志格式 -->
@@ -23,7 +24,7 @@
     <!-- 文件保存日志的相关配置 - ERROR级别专用 -->
     <appender name="ERROR-OUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 保存日志文件的路径 -->
-        <file>${logback.logdir}/${logback.appname}/error.log</file>
+        <file>${log_path}/${log_name}/error.log</file>
         <!-- 日志格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] [%thread] %logger{36} - %m%n</pattern>
@@ -48,7 +49,7 @@
     <!-- 记录info及以上的日志 -->
     <appender name="INFO-OUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 保存日志文件的路径 -->
-        <file>${logback.logdir}/${logback.appname}/info.log</file>
+        <file>${log_path}/${log_name}/info.log</file>
         <!-- 日志格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] [%thread] %logger{36} - %m%n</pattern>
