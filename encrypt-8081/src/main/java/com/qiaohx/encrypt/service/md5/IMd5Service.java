@@ -1,6 +1,6 @@
 package com.qiaohx.encrypt.service.md5;
 
-import com.qiaohx.encrypt.model.Emd5;
+import net.sf.json.JSONObject;
 
 public interface IMd5Service {
     /**
@@ -8,5 +8,5 @@ public interface IMd5Service {
      * @param value
      * @return
      */
-    Emd5 selectByValue(String value) throws Exception;
+    JSONObject selectByValue(String value) throws Exception;
 }

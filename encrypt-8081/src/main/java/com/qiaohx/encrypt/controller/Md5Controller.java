@@ -1,13 +1,11 @@
 package com.qiaohx.encrypt.controller;
 
-import com.qiaohx.encrypt.model.Emd5;
 import com.qiaohx.encrypt.service.md5.IMd5Service;
+import com.qiaohx.utils.constant.ConstantCode;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -20,17 +18,22 @@ public class Md5Controller {
     @Resource
     private IMd5Service iMd5Service;
 
-    @RequestMapping("/selectByValue/V1")
-    public Emd5 selectByValue(@RequestBody String str){
-        Emd5 emd5 = null;
+    @RequestMapping(value = "/selectByValue/{version}", method = RequestMethod.POST)
+    public String selectByValue(@RequestBody String str, @PathVariable String version){
+        logger.info("version : " + version);
+        JSONObject resultJson = new JSONObject();
         try {
             JSONObject jsonObject = JSONObject.fromObject(str);
             String value = jsonObject.containsKey("value") ? jsonObject.getString("value") : "";
-            emd5 = iMd5Service.selectByValue(value);
+            JSONObject md5Res = iMd5Service.selectByValue(value);
+            resultJson.put(ConstantCode.CODE, ConstantCode.CODE_200);
+            resultJson.put(ConstantCode.DATA, md5Res);
         }catch (Exception e){
             logger.error("MD5异常", e.getMessage(), e);
             e.printStackTrace();
+            resultJson.put(ConstantCode.CODE, ConstantCode.CODE_500);
+            resultJson.put(ConstantCode.MESSAGE, ConstantCode.MESSAGE_500);
         }
-        return emd5;
+        return resultJson.toString();
     }
 }

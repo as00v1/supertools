@@ -2,6 +2,8 @@ package com.qiaohx.encrypt.service.md5;
 
 import com.qiaohx.encrypt.mapper.Emd5Mapper;
 import com.qiaohx.encrypt.model.Emd5;
+import com.qiaohx.utils.constant.ConstantCode;
+import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -19,9 +21,9 @@ public class Md5Service implements IMd5Service{
     private Emd5Mapper emd5Mapper;
 
     @Override
-    public Emd5 selectByValue(String value) throws Exception{
+    public JSONObject selectByValue(String value) throws Exception{
         logger.info("收到字符串：" + value);
-
+        JSONObject resultJson = new JSONObject();
         MessageDigest md = MessageDigest.getInstance("MD5");
         //对字符串进行加密
         md.update(value.getBytes());
@@ -43,6 +45,9 @@ public class Md5Service implements IMd5Service{
         }else{
             logger.info("查询到数据库中存在");
         }
-        return emd5;
+        resultJson.put("md5Key", emd5.getMd5Key());
+        resultJson.put("md5Value", emd5.getMd5Value());
+        resultJson.put(ConstantCode.ERROR_CODE, ConstantCode.ERROR_CODE_0);
+        return resultJson;
     }
 }
