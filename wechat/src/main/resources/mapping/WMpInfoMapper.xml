@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qiaohx.wechat.mapper.WMpInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.qiaohx.wechat.model.WMpInfo" >
+    <id column="MP_ID" property="mpId" jdbcType="VARCHAR" />
+    <result column="APP_ID" property="appId" jdbcType="VARCHAR" />
+    <result column="APP_SECRET" property="appSecret" jdbcType="VARCHAR" />
+    <result column="ACCESS_TOKEN" property="accessToken" jdbcType="VARCHAR" />
+    <result column="JSAPI_TICKET" property="jsapiTicket" jdbcType="VARCHAR" />
+    <result column="UPDATE_DATE" property="updateDate" jdbcType="TIMESTAMP" />
+    <result column="REMARK" property="remark" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    MP_ID, APP_ID, APP_SECRET, ACCESS_TOKEN, JSAPI_TICKET, UPDATE_DATE, REMARK
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from w_mp_info
+    where MP_ID = #{mpId,jdbcType=VARCHAR}
+  </select>
+  <select id="queryAll" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from w_mp_info
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from w_mp_info
+    where MP_ID = #{mpId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.qiaohx.wechat.model.WMpInfo" >
+    insert into w_mp_info (MP_ID, APP_ID, APP_SECRET, 
+      ACCESS_TOKEN, JSAPI_TICKET, UPDATE_DATE, 
+      REMARK)
+    values (#{mpId,jdbcType=VARCHAR}, #{appId,jdbcType=VARCHAR}, #{appSecret,jdbcType=VARCHAR}, 
+      #{accessToken,jdbcType=VARCHAR}, #{jsapiTicket,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qiaohx.wechat.model.WMpInfo" >
+    insert into w_mp_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="mpId != null" >
+        MP_ID,
+      </if>
+      <if test="appId != null" >
+        APP_ID,
+      </if>
+      <if test="appSecret != null" >
+        APP_SECRET,
+      </if>
+      <if test="accessToken != null" >
+        ACCESS_TOKEN,
+      </if>
+      <if test="jsapiTicket != null" >
+        JSAPI_TICKET,
+      </if>
+      <if test="updateDate != null" >
+        UPDATE_DATE,
+      </if>
+      <if test="remark != null" >
+        REMARK,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="mpId != null" >
+        #{mpId,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null" >
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null" >
+        #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="jsapiTicket != null" >
+        #{jsapiTicket,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null" >
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qiaohx.wechat.model.WMpInfo" >
+    update w_mp_info
+    <set >
+      <if test="appId != null" >
+        APP_ID = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        APP_SECRET = #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null" >
+        ACCESS_TOKEN = #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="jsapiTicket != null" >
+        JSAPI_TICKET = #{jsapiTicket,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null" >
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null" >
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where MP_ID = #{mpId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qiaohx.wechat.model.WMpInfo" >
+    update w_mp_info
+    set APP_ID = #{appId,jdbcType=VARCHAR},
+      APP_SECRET = #{appSecret,jdbcType=VARCHAR},
+      ACCESS_TOKEN = #{accessToken,jdbcType=VARCHAR},
+      JSAPI_TICKET = #{jsapiTicket,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      REMARK = #{remark,jdbcType=VARCHAR}
+    where MP_ID = #{mpId,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -11,6 +11,7 @@
 
     <modules>
         <module>encrypt-8081</module>
+        <module>wechat</module>
         <module>utils</module>
     </modules>
 
