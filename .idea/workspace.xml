@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7435c0d2-0eae-45de-96b2-e4674d0793cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/controller/Md5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/controller/Md5Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/IMd5Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/IMd5Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/constant/ConstantCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/constant/ConstantCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/WechatHttpKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/WechatHttpKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/mapper/WMpInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/mapper/WMpInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/MpTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/MpTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/tasks/AccessTokenTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/tasks/AccessTokenTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/src/main/resources/mapping/WMpInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/src/main/resources/mapping/WMpInfoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/utils-8080/target/" />
     <ignored path="$PROJECT_DIR$/encrypt-8081/target/" />
     <ignored path="$PROJECT_DIR$/utils/target/" />
+    <ignored path="$PROJECT_DIR$/wechat/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,56 +32,61 @@
     <session id="-2118602018">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="25" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="6" />
-          <entry key="project.open.time.14" value="4" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.14" value="6" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.17" value="4" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="9" />
-          <entry key="java" value="2145" />
-          <entry key="txt" value="71" />
-          <entry key="xml" value="581" />
-          <entry key="yml" value="359" />
+          <entry key="dummy" value="16" />
+          <entry key="java" value="5193" />
+          <entry key="txt" value="107" />
+          <entry key="xml" value="648" />
+          <entry key="yml" value="378" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2145" />
-          <entry key="PLAIN_TEXT" value="80" />
-          <entry key="XML" value="581" />
-          <entry key="YAML" value="359" />
+          <entry key="JAVA" value="5193" />
+          <entry key="PLAIN_TEXT" value="123" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="647" />
+          <entry key="YAML" value="378" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="1-SNAPSHOT" value="1" />
-          <entry key="java" value="25" />
+          <entry key="class" value="7" />
+          <entry key="java" value="49" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
           <entry key="properties" value="2" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="11" />
-          <entry key="yml" value="11" />
+          <entry key="xml" value="22" />
+          <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="49" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="12" />
-          <entry key="YAML" value="11" />
+          <entry key="XML" value="23" />
+          <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -85,19 +98,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/controller/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
-              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="221">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +110,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/controller/Md5Controller.java">
+        <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="152">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/RequestUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="38" column="30" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/transfer/XmlUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/test/java/com/qiaohx/test/xml/XMLTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,6 +178,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>System.out.println</find>
+      <find>init</find>
     </findStrings>
     <replaceStrings>
       <replace>logger.info</replace>
@@ -163,14 +210,34 @@
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/model/Emd5.java" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/IMd5Service.java" />
-        <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/constant/ConstantCode.java" />
         <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/controller/Md5Controller.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/wechat/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/wechat/pom.xml" />
+        <option value="$PROJECT_DIR$/wechat/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/wechat/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/IMpToken.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/IMpTokenService.java" />
+        <option value="$PROJECT_DIR$/wechat/src/test/java/com/qiaohx/wechat/WechatApplicationTests.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/WechatApplication.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/mapper/WMpInfoMapper.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/MpTokenService.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/resources/mapping/WMpInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/tasks/AccessTokenTask.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/WechatHttpKit.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/MessageController.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/Controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java" />
+        <option value="$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/utils/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/src/test/java/com/qiaohx/test/xml/XMLTest.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/RequestUtils.java" />
+        <option value="$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/transfer/XmlUtils.java" />
       </list>
     </option>
   </component>
@@ -201,11 +268,6 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="encrypt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="supertools" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -215,11 +277,11 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="wechat" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="wechat" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -250,6 +312,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,13 +366,132 @@
               <item name="encrypt" type="462c0819:PsiDirectoryNode" />
               <item name="md5" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="encrypt-8081" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="transfer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supertools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supertools" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,17 +501,18 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543455308747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544505866126" />
     <property name="last_opened_file_path" value="H:/yinyinidea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaworkspace\supertools\wechat\src\main\resources" />
       <recent name="G:\ideaworkspace\supertools\encrypt-8081\src\main\resources" />
       <recent name="G:\ideaworkspace\supertools\encrypt-8081\src\main\resources\generator" />
       <recent name="G:\ideaworkspace\supertools\utils\src\main\java\com\qiaohx\utils\date" />
@@ -351,7 +535,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EncryptApplication">
+  <component name="RunManager" selected="Spring Boot.WechatApplication">
+    <configuration name="WechatApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiaohx.wechat.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qiaohx.wechat" />
+      <option name="MAIN_CLASS_NAME" value="com.qiaohx.wechat.WechatApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLTest.xmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiaohx.test.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qiaohx.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.qiaohx.test.xml.XMLTest" />
+      <option name="METHOD_NAME" value="xmlTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generator-encrypt" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -378,6 +594,32 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="generator-wechat" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/wechat" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="EncryptApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="encrypt-8081" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qiaohx.encrypt.EncryptApplication" />
@@ -385,10 +627,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WechatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wechat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qiaohx.wechat.WechatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Maven.generator-encrypt" />
+      <item itemvalue="Maven.generator-wechat" />
       <item itemvalue="Spring Boot.EncryptApplication" />
+      <item itemvalue="Spring Boot.WechatApplication" />
+      <item itemvalue="JUnit.WechatApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.XMLTest.xmlTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.XMLTest.xmlTest" />
+        <item itemvalue="JUnit.WechatApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -416,7 +675,16 @@
       <workItem from="1543366155939" duration="1011000" />
       <workItem from="1543381498569" duration="2993000" />
       <workItem from="1543453159167" duration="2150000" />
-      <workItem from="1543468029733" duration="314000" />
+      <workItem from="1543468029733" duration="8439000" />
+      <workItem from="1543539715254" duration="1286000" />
+      <workItem from="1543553398939" duration="3919000" />
+      <workItem from="1543987347205" duration="13000" />
+      <workItem from="1544073221812" duration="612000" />
+      <workItem from="1544160371299" duration="1948000" />
+      <workItem from="1544404247893" duration="850000" />
+      <workItem from="1544418148663" duration="3599000" />
+      <workItem from="1544490005837" duration="1969000" />
+      <workItem from="1544504808344" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="修改公共依赖工程">
       <created>1542347896390</created>
@@ -460,11 +728,57 @@
       <option name="project" value="LOCAL" />
       <updated>1543384652987</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改出入参规范">
+      <created>1543468371200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543468371200</updated>
+    </task>
+    <task id="LOCAL-00008" summary="新增wechat工程，用于处理微信的接口">
+      <created>1543472105318</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543472105318</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="WechatApplicationTests_contextLoads - 2018.11.29 at 13h 37m 50s.xml">
+      <configuration name="WechatApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WechatApplicationTests_contextLoads - 2018.11.29 at 13h 39m 22s.xml">
+      <configuration name="WechatApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WechatApplicationTests_contextLoads - 2018.11.29 at 17h 21m 59s.xml">
+      <configuration name="WechatApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WechatApplicationTests_contextLoads - 2018.11.29 at 17h 30m 15s.xml">
+      <configuration name="WechatApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WechatApplicationTests_contextLoads - 2018.11.29 at 17h 31m 20s.xml">
+      <configuration name="WechatApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XMLTest_xmlTest - 2018.12.07 at 13h 32m 31s.xml">
+      <configuration name="XMLTest.xmlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XMLTest_xmlTest - 2018.12.10 at 13h 42m 58s.xml">
+      <configuration name="XMLTest.xmlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XMLTest_xmlTest - 2018.12.10 at 13h 44m 56s.xml">
+      <configuration name="XMLTest.xmlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XMLTest_xmlTest - 2018.12.10 at 13h 45m 31s.xml">
+      <configuration name="XMLTest.xmlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XMLTest_xmlTest - 2018.12.10 at 13h 46m 16s.xml">
+      <configuration name="XMLTest.xmlTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37336000" />
+    <option name="totallyTimeSpent" value="60600000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,8 +791,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27815014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2419571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -488,7 +803,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3654391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2917847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -500,13 +815,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.25637394" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.28895184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.18766756" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -526,7 +841,9 @@
     <MESSAGE value="配置文件开发、生产分离" />
     <MESSAGE value="配置日志" />
     <MESSAGE value="定义spring切面记录请求日志" />
-    <option name="LAST_COMMIT_MESSAGE" value="定义spring切面记录请求日志" />
+    <MESSAGE value="修改出入参规范" />
+    <MESSAGE value="新增wechat工程，用于处理微信的接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增wechat工程，用于处理微信的接口" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -546,13 +863,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/mapper/InfoPoemMapper.java" />
     <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/resources/mapping/InfoPoemMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/mapper/Emd5Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/encrypt-8081/info.2018-11-25.log" />
     <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/resources/generator/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -664,13 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/model/Emd5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -699,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/date/DateFormatRules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -720,31 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/EncryptApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/IMd5Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -755,10 +1030,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        <state relative-caret-position="456">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -766,16 +1051,216 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/IMpTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/mapper/Emd5Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/EncryptApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/WechatApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/mapper/WMpInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/WechatHttpKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/test/java/com/qiaohx/wechat/WechatApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/mapping/WMpInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/access/MpTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/service/tasks/AccessTokenTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="489" selection-start-line="489" selection-end-line="489" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/test/java/com/qiaohx/test/xml/XMLTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/aspect/LogAspect.java">
+    <entry file="file://$PROJECT_DIR$/wechat/src/main/java/com/qiaohx/wechat/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="221">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypt-8081/src/main/java/com/qiaohx/encrypt/service/md5/Md5Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/http/RequestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/qiaohx/utils/transfer/XmlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

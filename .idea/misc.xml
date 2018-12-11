@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/utils-8080/pom.xml" />
         <option value="$PROJECT_DIR$/encrypt-8081/pom.xml" />
+        <option value="$PROJECT_DIR$/wechat/pom.xml" />
       </list>
     </option>
   </component>

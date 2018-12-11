@@ -119,4 +119,20 @@
       REMARK = #{remark,jdbcType=VARCHAR}
     where MP_ID = #{mpId,jdbcType=VARCHAR}
   </update>
+  <update id="updateTokenBatch" parameterType="java.util.List" >
+    update w_mp_info set
+    ACCESS_TOKEN=
+    <foreach collection="list" item="item" index="index" separator=" " open="case " close="end">
+      when MP_ID=#{item.mpId,jdbcType=VARCHAR} then #{item.accessToken,jdbcType=VARCHAR}
+    </foreach>
+    ,JSAPI_TICKET=
+    <foreach collection="list" item="item" index="index" separator=" " open="case " close="end">
+      when MP_ID=#{item.mpId,jdbcType=VARCHAR} then #{item.jsapiTicket,jdbcType=VARCHAR}
+    </foreach>
+    ,UPDATE_DATE = NOW()
+    where MP_ID in
+    <foreach collection="list" index="index" item="item" separator="," open="(" close=")">
+      #{item.mpId,jdbcType=VARCHAR}
+    </foreach>
+  </update>
 </mapper>

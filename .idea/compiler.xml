@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="encrypt-8081" />
         <module name="utils" />
+        <module name="wechat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

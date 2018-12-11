@@ -15,7 +15,7 @@ public class AccessTokenTask {
     @Autowired
     private MpTokenService mpTokenService;
 
-    @Scheduled(cron = "0 10 * * * *")
+    @Scheduled(cron = "0 0 * * * *")
     public void refreshAccessToken(){
         try {
             mpTokenService.refreshAccessToken();

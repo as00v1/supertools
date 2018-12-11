@@ -18,4 +18,6 @@ public interface WMpInfoMapper {
     int updateByPrimaryKey(WMpInfo record);
 
     List<WMpInfo> queryAll();
+
+    int updateTokenBatch(List<WMpInfo> list);
 }
