@@ -33,6 +33,12 @@ public class DateUtil {
             case YYYYMMDD:
                 dateFormat = new SimpleDateFormat("yyyyMMdd");
                 break;
+            case YYYYMMDDHHMMSS:
+                dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+                break;
+            case YYYYMMDDHHMMSSSSS:
+                dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+                break;
             default:
                 dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 break;

@@ -18,8 +18,13 @@ public class ConstantCode {
     public static final String CODE_500 = "500";
     public static final String MESSAGE_500 = "SYSTEM ERROR";
 
+    /** 业务错误编码 */
     public static final String ERROR_CODE = "errorCode";
+    /** 业务错误编码 */
+    public static final String ERROR_MSG = "errorMsg";
     /** 业务成功 */
     public static final String ERROR_CODE_0 = "0";
     public static final String ERROR_MESSAGE_0 = "请求成功";
+    /** 入参有问题 */
+    public static final String ERROR_CODE_1000 = "1000";
 }

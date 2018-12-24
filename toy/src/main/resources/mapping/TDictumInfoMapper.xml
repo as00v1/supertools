@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qiaohx.toy.mapper.TDictumInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.qiaohx.toy.model.TDictumInfo" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="DICTUM_DATE" property="dictumDate" jdbcType="TIMESTAMP" />
+    <result column="TITLE" property="title" jdbcType="VARCHAR" />
+    <result column="AUTHOR" property="author" jdbcType="VARCHAR" />
+    <result column="CONTENT" property="content" jdbcType="VARCHAR" />
+    <result column="DICTUM_TYPE" property="dictumType" jdbcType="VARCHAR" />
+    <result column="COUNTRY" property="country" jdbcType="VARCHAR" />
+    <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, DICTUM_DATE, TITLE, AUTHOR, CONTENT, DICTUM_TYPE, COUNTRY, CREATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_dictum_info
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from t_dictum_info
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.qiaohx.toy.model.TDictumInfo" >
+    insert into t_dictum_info (ID, DICTUM_DATE, TITLE, 
+      AUTHOR, CONTENT, DICTUM_TYPE, 
+      COUNTRY, CREATE_DATE)
+    values (#{id,jdbcType=VARCHAR}, #{dictumDate,jdbcType=TIMESTAMP}, #{title,jdbcType=VARCHAR}, 
+      #{author,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{dictumType,jdbcType=VARCHAR}, 
+      #{country,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qiaohx.toy.model.TDictumInfo" >
+    insert into t_dictum_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="dictumDate != null" >
+        DICTUM_DATE,
+      </if>
+      <if test="title != null" >
+        TITLE,
+      </if>
+      <if test="author != null" >
+        AUTHOR,
+      </if>
+      <if test="content != null" >
+        CONTENT,
+      </if>
+      <if test="dictumType != null" >
+        DICTUM_TYPE,
+      </if>
+      <if test="country != null" >
+        COUNTRY,
+      </if>
+      <if test="createDate != null" >
+        CREATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="dictumDate != null" >
+        #{dictumDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="dictumType != null" >
+        #{dictumType,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qiaohx.toy.model.TDictumInfo" >
+    update t_dictum_info
+    <set >
+      <if test="dictumDate != null" >
+        DICTUM_DATE = #{dictumDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="title != null" >
+        TITLE = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        AUTHOR = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        CONTENT = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="dictumType != null" >
+        DICTUM_TYPE = #{dictumType,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        COUNTRY = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qiaohx.toy.model.TDictumInfo" >
+    update t_dictum_info
+    set DICTUM_DATE = #{dictumDate,jdbcType=TIMESTAMP},
+      TITLE = #{title,jdbcType=VARCHAR},
+      AUTHOR = #{author,jdbcType=VARCHAR},
+      CONTENT = #{content,jdbcType=VARCHAR},
+      DICTUM_TYPE = #{dictumType,jdbcType=VARCHAR},
+      COUNTRY = #{country,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

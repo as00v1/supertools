@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  # 将返回的时间类型转换格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  application:
+    name: toy
+server:
+  port: 8083
+  servlet:
+    context-path: /api/toy
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.qiaohx.toy.model
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

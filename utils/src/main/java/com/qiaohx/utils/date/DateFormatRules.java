@@ -8,5 +8,13 @@ public enum DateFormatRules {
     /**
      * yyyyMMdd
      */
-    YYYYMMDD
+    YYYYMMDD,
+    /**
+     * yyyyMMddHHmmss
+     */
+    YYYYMMDDHHMMSS,
+    /**
+     * yyyyMMddHHmmssSSS
+     */
+    YYYYMMDDHHMMSSSSS
 }
