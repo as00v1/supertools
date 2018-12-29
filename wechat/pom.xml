@@ -6,7 +6,7 @@
     <groupId>com.qiaohx</groupId>
     <artifactId>wechat</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>wechat</name>
     <description>wechat programs</description>

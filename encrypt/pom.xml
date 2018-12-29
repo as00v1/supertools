@@ -6,7 +6,7 @@
     <groupId>com.qiaohx</groupId>
     <artifactId>encrypt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>encrypt</name>
     <description>Demo project for Spring Boot</description>
@@ -60,6 +60,7 @@
 
 
     <build>
+        <finalName>encrypt</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

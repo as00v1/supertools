@@ -1,9 +1,9 @@
 spring:
   datasource:
     name: prod
-    url: jdbc:mysql://118.24.212.141:3306/product?characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: product
-    password: Product&666
+    url: jdbc:mysql://118.24.212.141:3306/prod?characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: prod
+    password: q0183117307
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -16,7 +16,7 @@ public class WechatApplicationTests {
     @Test
     public void contextLoads() {
         try {
-            mpTokenService.refreshAccessToken();
+//            mpTokenService.refreshAccessToken();
         }catch (Exception e){
             e.printStackTrace();
         }

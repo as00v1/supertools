@@ -10,7 +10,7 @@
     <groupId>com.qiaohx</groupId>
     <artifactId>toy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>toy</name>
     <description>存放小型模块</description>
 
