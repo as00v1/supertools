@@ -13,6 +13,7 @@
         <module>encrypt</module>
         <module>wechat</module>
         <module>utils</module>
+        <module>encrypt-sdk</module>
     </modules>
 
     <parent>

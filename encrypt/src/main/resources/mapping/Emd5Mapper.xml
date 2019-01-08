@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qiaohx.encrypt.mapper.Emd5Mapper" >
+  <resultMap id="BaseResultMap" type="com.qiaohx.encrypt.model.Emd5" >
+    <id column="MD5_KEY" property="md5Key" jdbcType="VARCHAR" />
+    <result column="MD5_VALUE" property="md5Value" jdbcType="VARCHAR" />
+    <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    MD5_KEY, MD5_VALUE, CREATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from e_md5
+    where MD5_KEY = #{md5Key,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from e_md5
+    where MD5_KEY = #{md5Key,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.qiaohx.encrypt.model.Emd5" >
+    insert into e_md5 (MD5_KEY, MD5_VALUE, CREATE_DATE
+      )
+    values (#{md5Key,jdbcType=VARCHAR}, #{md5Value,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.qiaohx.encrypt.model.Emd5" >
+    insert into e_md5
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="md5Key != null" >
+        MD5_KEY,
+      </if>
+      <if test="md5Value != null" >
+        MD5_VALUE,
+      </if>
+      <if test="createDate != null" >
+        CREATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="md5Key != null" >
+        #{md5Key,jdbcType=VARCHAR},
+      </if>
+      <if test="md5Value != null" >
+        #{md5Value,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qiaohx.encrypt.model.Emd5" >
+    update e_md5
+    <set >
+      <if test="md5Value != null" >
+        MD5_VALUE = #{md5Value,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where MD5_KEY = #{md5Key,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qiaohx.encrypt.model.Emd5" >
+    update e_md5
+    set MD5_VALUE = #{md5Value,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP}
+    where MD5_KEY = #{md5Key,jdbcType=VARCHAR}
+  </update>
+</mapper>
