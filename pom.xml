@@ -23,7 +23,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>nexus-releases</id>
             <name>Nexus Release Repository</name>
@@ -34,7 +34,7 @@
             <name>Nexus Snapshot Repository</name>
             <url>http://127.0.0.1:8080/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <dependencies>
         <dependency>
